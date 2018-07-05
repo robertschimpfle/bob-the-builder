@@ -1,0 +1,9 @@
+version: "2"
+
+services:
+  agent:
+    build: ./agent-debian
+  master:
+    image: comquent/master.of.desaster:0.20.0
+    ports:
+      - "8080:8080"
